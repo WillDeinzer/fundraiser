@@ -1,0 +1,302 @@
+body {
+    display: grid;
+    grid-template-rows: 1fr 8.5fr 0.5fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    background-color: #111111;
+}
+
+
+/* Form Styles
+
+
+
+*/
+
+
+
+form {
+    background-image: radial-gradient(#0B0C10, #111111);
+    color: white;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(2,1fr);
+    font: "arvo", sans-serif;
+    font-weight: bold;
+    gap: 5vmin;
+    padding: 3vmin;
+}
+
+
+.firstLabel, .lastLabel, .emailLabel, .donationLabel, .attendance, .amountHeading,
+.yesLabel, .noLabel, .fifteenLabel, .twentyLabel, .thirtyLabel, .fiftyLabel,
+.hundredLabel, .otherLabel, .anonymousText, .yesAnonLabel, .noAnonLabel {
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.fifteenGroup, .twentyGroup, .thirtyGroup, .fiftyGroup, .hundredGroup, .otherGroup {
+    display: block;
+    padding: 0;
+}
+
+/*Contact Info*/
+
+.contactHeading {
+    flex: none;
+    font-size: 4vmin;
+    font-weight: 1000;
+}
+
+.contactInfo {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.contactCon {
+    display: flex;
+    flex-direction: column;
+    gap: 4vmin;
+}
+
+.inputField {
+    display: block;
+    color: #C5C6C7;
+    border: solid 5px;
+    border-radius: 8px;
+    border-color: #66FCF1;
+    font-size: 3vmin;
+    background-color: transparent;
+    width: 26vmin;
+    margin-top: 2vmin;
+}
+
+#emailA {
+    width: 40vmin;
+}
+
+.yesAnonGroup, .noAnonGroup, .firstNameGroup, .lastNameGroup, .emailGroup {
+    margin-left: 2vmin;
+}
+
+.firstNameGroup {
+    margin-top: 3vmin;
+}
+
+.yesAnonGroup, .noAnonGroup {
+    display: inline-block;
+}
+
+.anonymousText {
+    margin-left: 2vmin;
+    margin-bottom: 1vmin;
+}
+
+/*Donation Info*/
+
+.donationHeading {
+    flex: none;
+    font-size: 4vmin;
+    font-weight: 1000;
+}
+
+.donationInfo {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+.donationCon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dateGroup {
+    margin-left: 2vmin;
+}
+
+#donationDate {
+    display: block;
+    color: #C5C6C7;
+    border: solid 5px;
+    border-radius: 8px;
+    border-color: #66FCF1;
+    font-size: 3vmin;
+    background-color: transparent;
+    width: 22vmin;
+    margin-top: 2vmin;
+
+}
+
+.donationLabel {
+    font-size: 3vmin;
+    font-weight: 500;
+}
+
+.attendanceGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 40%;
+}
+
+.yesGroup {
+    grid-area: 2/1/3/2;
+    text-align: right;
+    padding: 2vmin;
+}
+
+.noGroup {
+    grid-area: 2/2/3/3;
+    text-align: left;
+    padding: 2vmin;
+}
+
+.attendance {
+    grid-area: 1/1/2/3;
+    text-align: center;
+}
+/*Donation Amount*/
+
+.donationRow {
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr 1fr 2fr;
+    row-gap: 5vmin;
+}
+
+.fifteenGroup {
+    grid-area: 1/1/2/2;
+}
+
+.twentyGroup {
+    grid-area: 1/3/2/4;
+}
+
+.thirtyGroup {
+    grid-area: 1/5/2/6;
+}
+
+.fiftyGroup {
+    grid-area: 2/2/3/3;
+}
+
+.hundredGroup {
+    grid-area: 2/4/3/5;
+}
+
+.otherGroup {
+    grid-area: 3/1/4/3;
+}
+/*Comments*/
+
+.otherInfo {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+.commentHeading {
+    font-size: 4vmin;
+    font-weight: 1000;
+}
+
+.commentCon {
+    display: flex;
+    justify-content: center;
+}
+
+.comments {
+    background-color: transparent;
+    resize: none;
+    display: block;
+    color: #C5C6C7;
+    border: solid 5px;
+    border-radius: 8px;
+    border-color: #66FCF1;
+    font-size: 3vmin;
+}
+
+/* Submit+Reset*/
+
+.submission {
+    grid-row: 5/6;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3vmin;
+}
+
+.submitB,
+.resetB {
+    width: 15%;
+    height: 120%;
+    border: solid 5px;
+    color: #C5C6C7;
+    background-color: transparent;
+    font-size: 3vmin;
+    border-radius: 8px;
+}
+
+.submitB {
+    border-color: #86C232;
+    font-size: 3vmin;
+    width: auto;
+    padding: 1.5% 4% 1.5% 4%;
+}
+
+.submitB:hover {
+    border-color: white;
+}
+
+.resetB {
+    border-color: #FF3131;
+    font-size: 3vmin;
+    width: auto;
+    padding: 1.5% 4% 1.5% 4%;
+}
+
+.resetB:hover {
+    border-color: white;
+}
+
+
+/* Side Bar Styles
+
+
+
+*/
+
+/* Left */
+
+.left-side-bar {
+    display: grid;
+    grid-area: 2/1/3/2;
+    background-color: #111111;
+}
+
+/* Right */
+
+.right-side-bar {
+    display: grid;
+    grid-area: 2/3/3/4;
+    background-color: #111111;
+}
+
+/* Footer Styles
+
+
+
+*/
+
+.footer {
+    display: flex;
+    grid-area: 3/1/4/4;
+    background-color: #111111;
+}

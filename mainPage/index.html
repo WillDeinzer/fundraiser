@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraiser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="main-text">FUNDRAISER</h1>
+    </div>
+    
+    <form action="http://httpbin.org/post" method="post">
+        <div class="contactInfo">
+            <p class="contactHeading">Contact Information</p>
+            <div class="anonymous">
+                <p class=anonymousText>I would like to remain anonymous</p>
+                <div class="yesAnonGroup">
+                    <input type="radio" id="yesAnon" class="yes_anon" name="anonymous_donation" value="Yes" required>
+                    <label class="yesAnonLabel" for="yesAnon">Yes</label>
+                </div>
+                <div class="noAnonGroup">
+                    <input type="radio" id="noAnon" class="no_anon" name="anonymous_donation" value="No" checked required>
+                    <label class="noAnonLabel" for="noAnon">No</label>
+                </div>
+            </div>
+            <div class="contactCon">
+                <div class="firstNameGroup">
+                    <label class="firstLabel" for="firstName">First Name</label>
+                    <input type="text" name="first_name" class="inputField" id="firstName" required>
+                </div>
+                <div class="lastNameGroup">
+                    <label class="lastLabel" for="lastName">Last Name</label>
+                    <input type="text" name="last_name" class="inputField" id="lastName" required>
+                </div>
+                <div class="emailGroup">
+                    <label class="emailLabel" for="emailA">Email Address</label>
+                    <input type="email" name="email_address" class="inputField" id="emailA" required>
+                </div>
+            </div>
+        </div>
+        <div class="donationInfo">
+            <p class="donationHeading">Donation Information</p>
+            <div class="donationCon">
+                <div class="dateGroup">
+                    <label class="donationLabel" for="donationDate">Date of Donation</label>
+                    <input type="date" id="donationDate" pattern="([0-9]{2}/[0-9]{2}/[0-9]{4})" required>
+                </div>
+                <div class="attendanceGroup">
+                    <p class="attendance">Will you attend the concert?</p>
+                    <div class="yesGroup">
+                        <input type="radio" id="yes" name="attend" value="Yes" required>
+                        <label class="yesLabel" for="yes">Yes</label>
+                    </div>
+                    <div class="noGroup">
+                        <input type="radio" id="no" name="attend" value="No" required>
+                        <label class="noLabel" for="no">No</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="donationRow">
+            <p class="amountHeading">Donation Amount</p>
+            <div class="options">
+                <div class="fifteenGroup">
+                    <input type="radio" id="15" class="non_other" name="donation_amount" value="15" required>
+                    <label class="fifteenLabel" for="15">$15.00</label>
+                </div>
+                <div class="twentyGroup">
+                    <input type="radio" id="20" class="non_other" name="donation_amount" value="20" checked required>
+                    <label class="twentyLabel" for="20">$20.00</label>
+                </div>
+                <div class="thirtyGroup">
+                    <input type="radio" id="30" class="non_other" name="donation_amount" value="30" required>
+                    <label class="thirtyLabel" for="30">$30.00</label>
+                </div>
+                <div class="fiftyGroup">
+                    <input type="radio" id="50" class="non_other" name="donation_amount" value="50" required>
+                    <label class="fiftyLabel" for="50">$50.00</label>
+                </div>
+                <div class="hundredGroup">
+                    <input type="radio" id="100" class="non_other" name="donation_amount" value="100" required>
+                    <label class="hundredLabel" for="100">$100.00</label>
+                </div>
+                <div class="otherGroup">
+                    <input type="radio" id="other" name="donation_amount" value="other" required>
+                    <label class="otherLabel" for="other">Other (Please Specify)</label>
+                </div>
+            </div>
+        </div>
+        <div class="otherInfo">
+            <p class="commentHeading">Comments</p>
+            <div class="commentCon">
+                <textarea class="comments" name="comments" rows="4" cols="60"></textarea>
+            </div>
+        </div>
+        <div class="submission">
+            <button class="submitB" type="submit">Submit</button>
+            <button class="resetB"type="reset">Reset</button>
+        </div>
+    </form>
+
+
+    <div class="left-side-bar">
+
+    </div>
+
+    <div class="right-side-bar">
+
+    </div>
+
+    <div class="footer">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
