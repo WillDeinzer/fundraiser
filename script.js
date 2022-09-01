@@ -27,6 +27,7 @@ noAnonymous.addEventListener('click', () => {
 /* Donate Button Code */
 const submit_button = document.querySelector(".submitB");
 const donate_button = document.querySelector(".thank");
+donate_button.disabled = true;
 submit_button.addEventListener('click', () => {
     donate_button.disabled = false;
     donate_button.style.opacity = 1.0;
