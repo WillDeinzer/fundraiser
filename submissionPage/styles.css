@@ -1,0 +1,32 @@
+body {
+    background-image: radial-gradient(#0B0C10, #111111);
+    color: #A9A9A9;
+    font: "arvo", sans-serif;
+    font-weight: 1000;
+    gap: 5vmin;
+    padding: 3vmin;
+    font-size: 5vmin;
+    text-align: center;
+}
+
+.explanationText {
+    font-size: 3vmin;
+    font-weight: 500;
+    text-align: center;
+}
+
+.donateButton {
+    margin-top: 5vmin;
+    padding: 1vmin 2vmin 1vmin 2vmin;
+    border: solid 5px;
+    color: #C5C6C7;
+    background-color: transparent;
+    font-size: 3vmin;
+    border-radius: 8px;
+    border-color: #86C232;
+    text-align: center;
+}
+
+.donateButton:hover {
+    border-color: white;
+}
