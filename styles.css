@@ -12,8 +12,6 @@ body {
 }
 
 .playing_image {
-    width: 70%;
-    height: auto;
     border: solid 1vmin;
     border-image: linear-gradient(45deg, #66FCF1, #86C232, #FF3131) 1;
 }
